@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19 Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+        ul.list_world {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        ul.list_world li {
+            border: 1px dashed;
+            width: 24%;
+            margin: 5px;
+            padding: 10px;
+            background: aliceblue;
+            float: left;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <h3>COVID-19 Tracker</h3>
+            <p>Link API Covid: <a href="">https://github.com/ExpDev07/coronavirus-tracker-api</a></p>
+            <p>Theo dõi tình trạng covid tại: <span id="title_world"></span></p>
+            <select name="" id="select_world">
+                <option value="">--Chọn Quốc Gia--</option>
+            </select>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Quốc gia</th>
+                    <th scope="col">Mã Quốc gia</th>
+                    <th scope="col">Dân số</th>
+                    <th scope="col">Bị nhiễm</th>
+                    <th scope="col">Tử vong</th>
+                    <th scope="col">Hồi phục</th>
+                    <th scope="col">Cập nhật gần nhất</th>
+                    <th scope="col">% tử vong</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><div id="id"></div></th>
+                    <th scope="row"><div id="quocgia"></div></th>
+                    <th scope="row"><div id="code"></div></th>
+                    <th scope="row"><div id="danso"></div></th>
+                    <th scope="row"><div id="canhiem"></div></th>
+                    <th scope="row"><div id="tuvong"></div></th>
+                    <th scope="row"><div id="hoiphuc"></div></th>
+                    <th scope="row"><div id="capnhat"></div></th>
+                    <th scope="row"><div id="phantram"></div></th>
+                  </tr>
+                </tbody>
+            </table>
+            <!-- World -->
+            <p>Theo dõi tình trạng covid toàn thế giới</p>
+            <p>Tổng ca nhiễm: <span id="tong_canhiem"></span></p>
+            <p>Tổng tử vong: <span id="tong_tuvong"></span></p>
+            <p>Tổng phục hồi: <span id="tong_phuchoi"></span></p>
+            <div id="list"></div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>
